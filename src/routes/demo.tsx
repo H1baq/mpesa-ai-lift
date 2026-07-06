@@ -9,7 +9,7 @@ const flow = [
   { title: "Creates catalog", desc: "Aisha adds 6 products in under 2 minutes." },
   { title: "Generates payment link", desc: "Shares mpesalift.co/pay/123 on WhatsApp." },
   { title: "Receives payment", desc: "John Mwangi pays KES 2,500 instantly via M‑Pesa." },
-  { title: "AI identifies churned customers", desc: "Lift AI flags 17 customers inactive 30+ days." },
+  { title: "AI identifies churned customers", desc: "Zuri flags 17 customers inactive 30+ days." },
   { title: "AI launches campaign", desc: "Auto-sends 10% offer to churned segment via WhatsApp." },
   { title: "Sales increase", desc: "9 of 17 customers return in 5 days. +KES 34,200." },
   { title: "Credit score improves", desc: "Score rises 710 → 725 based on new activity." },
@@ -39,7 +39,7 @@ function Demo() {
               <div className="relative flex items-center gap-3">
                 <div className="h-10 w-10 rounded-lg gradient-primary grid place-items-center"><Sparkles className="h-5 w-5" /></div>
                 <div>
-                  <div className="text-white/60 text-xs">Lift AI is</div>
+                  <div className="text-white/60 text-xs">Zuri is</div>
                   <div className="font-semibold">Working in the background</div>
                 </div>
               </div>

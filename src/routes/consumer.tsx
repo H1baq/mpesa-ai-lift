@@ -38,7 +38,7 @@ function Consumer() {
       {searched && (
         <>
           <div className="rounded-xl bg-primary-soft border border-primary/20 p-4 mb-4 text-sm">
-            <span className="font-semibold text-ink">Lift AI:</span> <span className="text-ink-muted">Found 4 nearby M‑Pesa Lift merchants selling "{q}". Top match is <span className="text-ink font-semibold">Aisha Retail Store</span> — 1.2 km away with 4.9★ rating.</span>
+            <span className="font-semibold text-ink">Zuri:</span> <span className="text-ink-muted">Found 4 nearby M‑Pesa Lift merchants selling "{q}". Top match is <span className="text-ink font-semibold">Aisha Retail Store</span> — 1.2 km away with 4.9★ rating.</span>
           </div>
 
           <div className="space-y-3">

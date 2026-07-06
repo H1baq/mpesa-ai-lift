@@ -55,7 +55,7 @@ function Dashboard() {
         <div className="relative grid lg:grid-cols-[1fr_auto] gap-6 items-center">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-semibold">
-              <Sparkles className="h-3.5 w-3.5" /> Lift AI · Morning brief
+              <Sparkles className="h-3.5 w-3.5" /> Zuri · Morning brief
             </div>
             <p className="mt-4 text-lg lg:text-xl leading-relaxed max-w-2xl">
               Your sales <span className="text-primary font-semibold">increased 12%</span> this week. <span className="text-white/70">17 customers</span> haven't purchased in the last 30 days. I recommend sending a <span className="font-semibold">re-engagement offer</span>.

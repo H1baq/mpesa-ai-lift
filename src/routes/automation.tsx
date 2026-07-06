@@ -18,7 +18,7 @@ function Automation() {
     <AppShell>
       <PageHeader
         title="AI Automation Studio"
-        subtitle="Set it and forget it. Lift AI runs these workflows for you 24/7."
+        subtitle="Set it and forget it. Zuri runs these workflows for you 24/7."
         actions={
           <div className="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-soft text-accent-foreground text-xs font-semibold">
             <Sparkles className="h-3.5 w-3.5" /> 3 active

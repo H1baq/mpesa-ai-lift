@@ -22,7 +22,7 @@ function Inventory() {
             <Sparkles className="h-5 w-5" />
           </div>
           <div className="min-w-0 flex-1">
-            <div className="font-semibold text-ink">Lift AI Recommendation</div>
+            <div className="font-semibold text-ink">Zuri Recommendation</div>
             <p className="text-sm text-ink-muted mt-1">
               <span className="font-semibold text-ink">Rice 2kg</span> stock likely to run out in <span className="font-semibold text-ink">4 days</span> based on 7-day sales velocity. Suggested reorder: <span className="font-semibold text-ink">40 units</span>.
             </p>
