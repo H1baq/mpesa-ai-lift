@@ -9,38 +9,295 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as PaymentsRouteImport } from './routes/payments'
+import { Route as OnboardingRouteImport } from './routes/onboarding'
+import { Route as InventoryRouteImport } from './routes/inventory'
+import { Route as InsightsRouteImport } from './routes/insights'
+import { Route as DemoRouteImport } from './routes/demo'
+import { Route as CustomersRouteImport } from './routes/customers'
+import { Route as CreditRouteImport } from './routes/credit'
+import { Route as ConsumerRouteImport } from './routes/consumer'
+import { Route as CommerceRouteImport } from './routes/commerce'
+import { Route as AutomationRouteImport } from './routes/automation'
+import { Route as AiAgentRouteImport } from './routes/ai-agent'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as StoreAishaRouteImport } from './routes/store.aisha'
 
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentsRoute = PaymentsRouteImport.update({
+  id: '/payments',
+  path: '/payments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingRoute = OnboardingRouteImport.update({
+  id: '/onboarding',
+  path: '/onboarding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InventoryRoute = InventoryRouteImport.update({
+  id: '/inventory',
+  path: '/inventory',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemoRoute = DemoRouteImport.update({
+  id: '/demo',
+  path: '/demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CustomersRoute = CustomersRouteImport.update({
+  id: '/customers',
+  path: '/customers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CreditRoute = CreditRouteImport.update({
+  id: '/credit',
+  path: '/credit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConsumerRoute = ConsumerRouteImport.update({
+  id: '/consumer',
+  path: '/consumer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommerceRoute = CommerceRouteImport.update({
+  id: '/commerce',
+  path: '/commerce',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AutomationRoute = AutomationRouteImport.update({
+  id: '/automation',
+  path: '/automation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiAgentRoute = AiAgentRouteImport.update({
+  id: '/ai-agent',
+  path: '/ai-agent',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StoreAishaRoute = StoreAishaRouteImport.update({
+  id: '/store/aisha',
+  path: '/store/aisha',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ai-agent': typeof AiAgentRoute
+  '/automation': typeof AutomationRoute
+  '/commerce': typeof CommerceRoute
+  '/consumer': typeof ConsumerRoute
+  '/credit': typeof CreditRoute
+  '/customers': typeof CustomersRoute
+  '/demo': typeof DemoRoute
+  '/insights': typeof InsightsRoute
+  '/inventory': typeof InventoryRoute
+  '/onboarding': typeof OnboardingRoute
+  '/payments': typeof PaymentsRoute
+  '/settings': typeof SettingsRoute
+  '/store/aisha': typeof StoreAishaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ai-agent': typeof AiAgentRoute
+  '/automation': typeof AutomationRoute
+  '/commerce': typeof CommerceRoute
+  '/consumer': typeof ConsumerRoute
+  '/credit': typeof CreditRoute
+  '/customers': typeof CustomersRoute
+  '/demo': typeof DemoRoute
+  '/insights': typeof InsightsRoute
+  '/inventory': typeof InventoryRoute
+  '/onboarding': typeof OnboardingRoute
+  '/payments': typeof PaymentsRoute
+  '/settings': typeof SettingsRoute
+  '/store/aisha': typeof StoreAishaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ai-agent': typeof AiAgentRoute
+  '/automation': typeof AutomationRoute
+  '/commerce': typeof CommerceRoute
+  '/consumer': typeof ConsumerRoute
+  '/credit': typeof CreditRoute
+  '/customers': typeof CustomersRoute
+  '/demo': typeof DemoRoute
+  '/insights': typeof InsightsRoute
+  '/inventory': typeof InventoryRoute
+  '/onboarding': typeof OnboardingRoute
+  '/payments': typeof PaymentsRoute
+  '/settings': typeof SettingsRoute
+  '/store/aisha': typeof StoreAishaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/ai-agent'
+    | '/automation'
+    | '/commerce'
+    | '/consumer'
+    | '/credit'
+    | '/customers'
+    | '/demo'
+    | '/insights'
+    | '/inventory'
+    | '/onboarding'
+    | '/payments'
+    | '/settings'
+    | '/store/aisha'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/ai-agent'
+    | '/automation'
+    | '/commerce'
+    | '/consumer'
+    | '/credit'
+    | '/customers'
+    | '/demo'
+    | '/insights'
+    | '/inventory'
+    | '/onboarding'
+    | '/payments'
+    | '/settings'
+    | '/store/aisha'
+  id:
+    | '__root__'
+    | '/'
+    | '/ai-agent'
+    | '/automation'
+    | '/commerce'
+    | '/consumer'
+    | '/credit'
+    | '/customers'
+    | '/demo'
+    | '/insights'
+    | '/inventory'
+    | '/onboarding'
+    | '/payments'
+    | '/settings'
+    | '/store/aisha'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AiAgentRoute: typeof AiAgentRoute
+  AutomationRoute: typeof AutomationRoute
+  CommerceRoute: typeof CommerceRoute
+  ConsumerRoute: typeof ConsumerRoute
+  CreditRoute: typeof CreditRoute
+  CustomersRoute: typeof CustomersRoute
+  DemoRoute: typeof DemoRoute
+  InsightsRoute: typeof InsightsRoute
+  InventoryRoute: typeof InventoryRoute
+  OnboardingRoute: typeof OnboardingRoute
+  PaymentsRoute: typeof PaymentsRoute
+  SettingsRoute: typeof SettingsRoute
+  StoreAishaRoute: typeof StoreAishaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payments': {
+      id: '/payments'
+      path: '/payments'
+      fullPath: '/payments'
+      preLoaderRoute: typeof PaymentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding': {
+      id: '/onboarding'
+      path: '/onboarding'
+      fullPath: '/onboarding'
+      preLoaderRoute: typeof OnboardingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inventory': {
+      id: '/inventory'
+      path: '/inventory'
+      fullPath: '/inventory'
+      preLoaderRoute: typeof InventoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demo': {
+      id: '/demo'
+      path: '/demo'
+      fullPath: '/demo'
+      preLoaderRoute: typeof DemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/customers': {
+      id: '/customers'
+      path: '/customers'
+      fullPath: '/customers'
+      preLoaderRoute: typeof CustomersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credit': {
+      id: '/credit'
+      path: '/credit'
+      fullPath: '/credit'
+      preLoaderRoute: typeof CreditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/consumer': {
+      id: '/consumer'
+      path: '/consumer'
+      fullPath: '/consumer'
+      preLoaderRoute: typeof ConsumerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commerce': {
+      id: '/commerce'
+      path: '/commerce'
+      fullPath: '/commerce'
+      preLoaderRoute: typeof CommerceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/automation': {
+      id: '/automation'
+      path: '/automation'
+      fullPath: '/automation'
+      preLoaderRoute: typeof AutomationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-agent': {
+      id: '/ai-agent'
+      path: '/ai-agent'
+      fullPath: '/ai-agent'
+      preLoaderRoute: typeof AiAgentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +305,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/store/aisha': {
+      id: '/store/aisha'
+      path: '/store/aisha'
+      fullPath: '/store/aisha'
+      preLoaderRoute: typeof StoreAishaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AiAgentRoute: AiAgentRoute,
+  AutomationRoute: AutomationRoute,
+  CommerceRoute: CommerceRoute,
+  ConsumerRoute: ConsumerRoute,
+  CreditRoute: CreditRoute,
+  CustomersRoute: CustomersRoute,
+  DemoRoute: DemoRoute,
+  InsightsRoute: InsightsRoute,
+  InventoryRoute: InventoryRoute,
+  OnboardingRoute: OnboardingRoute,
+  PaymentsRoute: PaymentsRoute,
+  SettingsRoute: SettingsRoute,
+  StoreAishaRoute: StoreAishaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
