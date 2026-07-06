@@ -11,7 +11,7 @@ const nav = [
   { to: "/commerce", label: "Commerce", icon: ShoppingBag },
   { to: "/payments", label: "Payments", icon: Link2 },
   { to: "/inventory", label: "Inventory", icon: Boxes },
-  { to: "/ai-agent", label: "Lift AI", icon: Sparkles, badge: "New" },
+  { to: "/ai-agent", label: "Zuri", icon: Sparkles, badge: "New" },
   { to: "/customers", label: "Customers", icon: Users },
   { to: "/automation", label: "Automation", icon: Zap },
   { to: "/insights", label: "Insights", icon: LineChart },

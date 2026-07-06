@@ -20,10 +20,10 @@ function Onboarding() {
               <CheckCircle2 className="h-10 w-10" />
             </div>
             <h1 className="mt-6 text-3xl font-bold text-ink">Your AI-powered store is now live 🎉</h1>
-            <p className="mt-3 text-ink-muted">Aisha Retail Store is ready to accept M‑Pesa payments, share catalogs, and grow with Lift AI.</p>
+            <p className="mt-3 text-ink-muted">Aisha Retail Store is ready to accept M‑Pesa payments, share catalogs, and grow with Zuri.</p>
             <div className="mt-6 flex gap-2 justify-center">
               <Link to="/" className="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold inline-flex items-center gap-2">Open Dashboard <ArrowRight className="h-4 w-4" /></Link>
-              <Link to="/ai-agent" className="px-5 py-2.5 rounded-lg border border-border font-semibold inline-flex items-center gap-2"><Sparkles className="h-4 w-4" /> Meet Lift AI</Link>
+              <Link to="/ai-agent" className="px-5 py-2.5 rounded-lg border border-border font-semibold inline-flex items-center gap-2"><Sparkles className="h-4 w-4" /> Meet Zuri</Link>
             </div>
           </div>
         </div>

@@ -46,7 +46,7 @@ function match(q: string) {
 
 function AiAgent() {
   const [messages, setMessages] = useState<Msg[]>([
-    { role: "ai", text: "Hi Aisha, I'm **Lift AI** — your business copilot. Ask me anything about sales, customers, inventory, or growth.", actions: [] },
+    { role: "ai", text: "Hi Aisha, I'm **Zuri** — your business copilot. Ask me anything about sales, customers, inventory, or growth.", actions: [] },
   ]);
   const [input, setInput] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -66,7 +66,7 @@ function AiAgent() {
   return (
     <AppShell>
       <PageHeader
-        title={<span className="inline-flex items-center gap-2">Lift AI <span className="text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground">BETA</span></span>}
+        title={<span className="inline-flex items-center gap-2">Zuri <span className="text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground">BETA</span></span>}
         subtitle="Your AI business copilot. Ask about sales, customers, inventory, or growth."
       />
 
@@ -113,7 +113,7 @@ function AiAgent() {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask Lift AI anything about your business..."
+            placeholder="Ask Zuri anything about your business..."
             autoFocus
             className="flex-1 px-4 py-2.5 rounded-lg border border-input bg-background text-sm outline-none focus:ring-2 focus:ring-primary/30"
           />
