@@ -66,7 +66,7 @@ function AiAgent() {
   return (
     <AppShell>
       <PageHeader
-        title={<span className="inline-flex items-center gap-2">Lift AI <span className="text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground">BETA</span></span> as any}
+        title={<span className="inline-flex items-center gap-2">Lift AI <span className="text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground">BETA</span></span>}
         subtitle="Your AI business copilot. Ask about sales, customers, inventory, or growth."
       />
 
